@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="widget.css">
+</head>
+<body>
+<div id="miniContainer" onclick="openM()">
+  <div id="miniBtn"><img src="MINI_PHOTO_PLACEHOLDER"></div>
+</div>
+<div id="mainModal">
+  <div class="header"><span class="title">APP_NAME_PLACEHOLDER</span><div class="close-btn" onclick="closeM()">&times;</div></div>
+  <div class="inner-box">
+    <div class="data-flow-line df1"></div>
+    <div class="data-flow-line df2"></div>
+    <div class="data-flow-line df3"></div>
+    <div id="dynamicContent" style="z-index:10;text-align:center;"></div>
+  </div>
+  <button class="btn btn-hack" id="mainBtn" onclick="handleAction()">START HACK</button>
+  <button class="btn btn-reg" onclick="AndroidBridge.openRegistration()">REGISTER</button>
+  <button class="btn btn-dep" onclick="AndroidBridge.openDeposit()">DEPOSIT</button>
+</div>
+<script src="widget.js"></script>
+</body>
+</html>
